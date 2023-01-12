@@ -8,13 +8,12 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class EchoServer {
-    public EchoServer() {
-
-    }
+    Integer PORT = 1234;
+    public EchoServer() { }
     public void establish() {
         ServerSocket serverSocket = null;
         try {
-            serverSocket= new ServerSocket(1234);
+            serverSocket= new ServerSocket(PORT);
         }catch (IOException e) {
             System.out.println("Could not listen on port: 1234");
             System.exit(-1);
@@ -42,6 +41,7 @@ public class EchoServer {
         try {
             while ((inputLine = in.readLine()) != null) {
                 out.println(inputLine);
+                System.out.println(inputLine);
                 if (inputLine.equals("Bye."))
                     break;
             }
