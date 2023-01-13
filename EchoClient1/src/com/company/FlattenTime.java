@@ -3,8 +3,9 @@ package com.company;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-
+/*
 public class FlattenTime {
+
     // Send to server
     public static void main(String [] args){
         String filename = "time.ser";
@@ -22,4 +23,6 @@ public class FlattenTime {
         } catch(IOException ex){
             ex.printStackTrace();
         }
-    }}
+    }
+    }
+     */

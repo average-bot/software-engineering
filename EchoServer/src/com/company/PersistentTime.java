@@ -6,6 +6,7 @@ import java.util.Calendar;
 
 public class PersistentTime implements Serializable {
     private Date time;
+
     public PersistentTime() {
         time = Calendar.getInstance().getTime();
     }

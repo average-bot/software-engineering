@@ -1,26 +1,27 @@
 package com.company;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.Date;
 
 public class EchoClient {
     Integer PORT = 1234;
     public EchoClient() { }
     public void establish() {
         Socket echoSocket = null;
-        PrintWriter out = null;
         BufferedReader in = null;
+        ObjectOutputStream objectOut = null;
+        PrintWriter out = null;
 
         try {
             echoSocket = new Socket(InetAddress.getLocalHost(), PORT);
-            out = new PrintWriter(echoSocket.getOutputStream(), true);
+            objectOut = new ObjectOutputStream(echoSocket.getOutputStream());
+            objectOut.flush();
             in = new BufferedReader(new InputStreamReader(
                     echoSocket.getInputStream()));
+            out = new PrintWriter(echoSocket.getOutputStream(), true);
             System.out.println(echoSocket.getInetAddress());
             // DESKTOP-7R2D7U7/192.168.0.80
             System.out.println(echoSocket.getLocalPort());
@@ -48,15 +49,20 @@ public class EchoClient {
                 InputStreamReader(System.in));
 
         String userInput;
+        //PersistentTime time = new PersistentTime();
+        Date date = new Date();
 
         try{
             while ((userInput = stdIn.readLine()) != null) {
                 out.println(userInput);
+                //objectOut.writeObject(time);
+                objectOut.writeObject(date);
+                objectOut.flush();
                 if (userInput.equals("Bye."))
                     break;
                 System.out.println("echo: " + in.readLine());
             }
-            out.close();
+            objectOut.close();
             in.close();
             stdIn.close();
             echoSocket.close();

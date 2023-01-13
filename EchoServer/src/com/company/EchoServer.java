@@ -1,16 +1,15 @@
 package com.company;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Calendar;
+import java.util.Date;
 
 public class EchoServer {
     Integer PORT = 1234;
     public EchoServer() { }
-    public void establish() {
+    public void establish() throws IOException, ClassNotFoundException {
         ServerSocket serverSocket = null;
         try {
             serverSocket= new ServerSocket(PORT);
@@ -27,21 +26,34 @@ public class EchoServer {
         }
         PrintWriter out=null;
         BufferedReader in = null;
+        ObjectInputStream ois = null;
         try {
             out = new PrintWriter(
                     clientSocket.getOutputStream(), true);
             in = new BufferedReader(
                     new InputStreamReader(
                             clientSocket.getInputStream()));
+            ois = new ObjectInputStream(clientSocket.getInputStream());
         }catch (IOException ioe) {
             System.out.println("Failed in creating streams");
             System.exit(-1);
         }
         String inputLine, outputLine;
+
+
+        //PersistentTime time = null;
+        Date date;
+
+        // TODO: FIX while ((date = (Date) ois.readObject()) != null) { }
         try {
             while ((inputLine = in.readLine()) != null) {
                 out.println(inputLine);
+                //time = (PersistentTime) ois.readObject();
+                date = (Date) ois.readObject();
+                //System.out.println("Message sent time: " + time.getTime());
                 System.out.println(inputLine);
+                System.out.println(date);
+                System.out.println("Message delivered time: "+ Calendar.getInstance().getTime());
                 if (inputLine.equals("Bye."))
                     break;
             }
@@ -52,6 +64,7 @@ public class EchoServer {
         try {
             clientSocket.close();
             serverSocket.close();
+            ois.close();
         }catch (IOException e) {
             System.out.println("Could not close");
             System.exit(-1);

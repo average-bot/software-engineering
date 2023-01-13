@@ -5,13 +5,15 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Calendar;
 
+
+/*
 public class InflateTime {
     // Send to client
-    public static void main(String [] args){
+    InflateTime(){
         String filename = "time.ser";
-        if(args.length > 0) {
-            filename = args[0];
-        }
+        //if(args.length > 0) {
+        //    filename = args[0];
+        //}
         PersistentTime time = null;
         FileInputStream fis = null;
         ObjectInputStream in = null;
@@ -32,3 +34,4 @@ public class InflateTime {
         System.out.println("Currenttime:"+Calendar.getInstance().getTime());
     }
 }
+*/
