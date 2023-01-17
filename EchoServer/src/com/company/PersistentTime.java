@@ -12,4 +12,6 @@ public class PersistentTime implements Serializable {
     }
     public Date getTime() {
         return time;
-    }}
+    }
+
+}

@@ -1,18 +1,17 @@
 package com.company;
-
 import java.io.*;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.util.Calendar;
-import java.util.Date;
+import java.net.*;
 
 public class EchoServer {
-    Integer PORT = 1234;
-    public EchoServer() { }
-    public void establish() throws IOException, ClassNotFoundException {
+    public EchoServer() {
+
+    }
+    public void establish() {
+        InputStream input = null;
         ServerSocket serverSocket = null;
+        BufferedReader reader = null;
         try {
-            serverSocket= new ServerSocket(PORT);
+            serverSocket = new ServerSocket(1234);
         }catch (IOException e) {
             System.out.println("Could not listen on port: 1234");
             System.exit(-1);
@@ -20,37 +19,37 @@ public class EchoServer {
         Socket clientSocket = null;
         try {
             clientSocket = serverSocket.accept();
-            System.out.println("connect");
         }catch (IOException e) {
             System.out.println("Accept failed: 1234");
             System.exit(-1);
         }
-        FileInputStream fis = null;
-        ObjectInputStream ois = null;
-
+        PrintWriter out=null;
+        BufferedReader in = null;
         try {
-            ois = new ObjectInputStream(clientSocket.getInputStream());
+            input = clientSocket.getInputStream();
+            reader = new BufferedReader(new InputStreamReader(input));
         }catch (IOException ioe) {
             System.out.println("Failed in creating streams");
             System.exit(-1);
         }
-        PersistentTime persistentTime;
-
+        String inputLine, outputLine;
         try {
-            while ((persistentTime = (PersistentTime) ois.readObject()) != null) {
-                System.out.println("Message sent time: " + persistentTime.getTime());
-                System.out.println("Message arrival time: "+ Calendar.getInstance().getTime());
+            while ((inputLine = reader.readLine()) != null) {
+                System.out.println(inputLine);
+
             }
         }catch (IOException ioe) {
             System.out.println("Failed in reading, writing");
             System.exit(-1);
         }
         try {
-            fis.close();
-            ois.close();
+            input.close();
+            reader.close();
             clientSocket.close();
             serverSocket.close();
         }catch (IOException e) {
             System.out.println("Could not close");
             System.exit(-1);
-        }}}
+        }}
+}
+
