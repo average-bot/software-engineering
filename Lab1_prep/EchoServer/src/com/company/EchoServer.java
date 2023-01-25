@@ -7,7 +7,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class EchoServer {
-    Integer PORT = 1234;
+    Integer PORT = 1250;
     public EchoServer() { }
     public void establish() throws IOException, ClassNotFoundException {
         ServerSocket serverSocket = null;
@@ -53,4 +53,6 @@ public class EchoServer {
         }catch (IOException e) {
             System.out.println("Could not close");
             System.exit(-1);
-        }}}
+        }
+    }
+}

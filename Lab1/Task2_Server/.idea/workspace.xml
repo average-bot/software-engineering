@@ -2,34 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a707da30-2c2a-42fc-a61f-c1002d5bca2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Task1_Client/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task1_Client/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task1_Client/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task1_Client/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task1_Client/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task1_Client/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task1_Client/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task1_Client/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task1_Client/Task1_Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task1_Client/out/production/Task1_Client/com/company/EchoClient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task1_Client/out/production/Task1_Client/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task1_Client/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task2_Server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Task2_Server/com/company/EchoServer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Task2_Server/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EchoClient1/out/production/EchoClient1/com/company/EchoClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EchoClient1/out/production/EchoClient1/com/company/EchoClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EchoClient1/src/com/company/EchoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EchoClient1/src/com/company/EchoClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EchoServer/out/production/EchoServer/com/company/EchoServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EchoServer/out/production/EchoServer/com/company/EchoServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EchoServer/src/com/company/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EchoServer/src/com/company/EchoServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EchoServer/src/com/company/PersistentTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EchoServer/src/com/company/PersistentTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tasks/Task1/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tasks/Task1/Task1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tasks/Task1/src/reciever/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tasks/Task1/src/reciever/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tasks/Task1/src/reciever/sample.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tasks/Task1/src/sender/Description.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tasks/Task1/src/sender/EchoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tasks/Task1/src/sender/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tasks/description.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1_prep/EchoClient/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1_prep/EchoClient/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1_prep/EchoClient1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1_prep/EchoClient1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1_prep/EchoServer/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1_prep/EchoServer/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1_prep/MultiClientServer/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1_prep/MultiClientServer/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +29,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="2KT3e5KaSGFm0CiFXv9mwspLq9N" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -108,9 +95,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -122,64 +111,6 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Task2_Server" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Task2_Server" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -199,6 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673984839554</updated>
       <workItem from="1673984840770" duration="1754000" />
+      <workItem from="1674400704150" duration="1292000" />
     </task>
     <servers />
   </component>
@@ -215,5 +147,9 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

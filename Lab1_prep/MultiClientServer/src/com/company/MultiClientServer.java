@@ -9,7 +9,7 @@ import java.net.*;
         public void run() {
             ServerSocket serverSocket = null;
             try {
-                serverSocket= new ServerSocket(PORT);
+                serverSocket = new ServerSocket(PORT);
                 System.out.println(serverSocket.getInetAddress());
                 // gives 0.0.0.0 when its not connected to TCP/IP network
 

@@ -7,7 +7,7 @@ import java.net.UnknownHostException;
 import java.util.Date;
 
 public class EchoClient {
-    Integer PORT = 1234;
+    Integer PORT = 1250;
     public EchoClient() { }
     public void establish() {
         Socket echoSocket = null;

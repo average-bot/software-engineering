@@ -1,0 +1,14 @@
+@startuml
+class com.company.Main {
++ {static} void main(String[])
+}
+class com.company.Person {
+- String name
+- Integer age
++ String getName()
++ Integer getAge()
+}
+
+
+java.io.Serializable <|.. com.company.Person
+@enduml

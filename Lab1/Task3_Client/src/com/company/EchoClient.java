@@ -13,7 +13,7 @@ public class EchoClient {
         PrintWriter out = null;
         BufferedReader in = null;
         try {
-            echoSocket = new Socket("192.168.0.80", PORT);
+            echoSocket = new Socket("2a04:ae0c:6407:7600:d484:7b76:915a:8447", PORT);
             // InetAddress.getLocalHost() <- for localhost
             // or 1234 for the EchoServer in task1
             out = new PrintWriter(echoSocket.getOutputStream(), true);
